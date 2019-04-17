@@ -18,6 +18,7 @@ import Festivals from "./pages/Festivals";
 import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 
+import logo from "./assets/img/logo.png";
 import "./App.css";
 
 const routes = [
@@ -35,7 +36,16 @@ const App = () => {
   return (
     <Router>
       <Navbar bg="light">
-        <Nav className="mx-auto">
+        <Navbar.Brand href="/" key="/" as={NavLink} to="/" exact>
+          <img
+            src={logo}
+            width="80"
+            height="60"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Nav className="ml-auto">
           {routes.map(route => (
             <Nav.Link
               key={route.path}
