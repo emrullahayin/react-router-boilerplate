@@ -9,7 +9,7 @@ import {
 import { CSSTransition } from "react-transition-group";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-import Routes from "./Routes";
+import Routes from "./routes";
 
 import logo from "./assets/img/logo.png";
 import "./App.css";
