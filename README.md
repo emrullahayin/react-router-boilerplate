@@ -11,7 +11,7 @@ git clone https://github.com/emrullahayin/react-router-boilerplate.git
 
 - Install all the project's dependencies:
 ```
-yarn or npm install
+yarn or npm i
 ```
 - Once that's done, run the project:
 ```
