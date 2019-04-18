@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## React Router Boilerplate
+# React Router Boilerplate
 
-# Installing
+## Installing
 
 - Clone this repository:
 ```
@@ -18,9 +18,9 @@ yarn or npm install
 npm start or yarn start
 ```
 
-# Deployment
+## Deployment
 The app can be deployed using either Netlify
 
-# Built With
+## Built With
 - Javascript
 - React - (UI library)
