@@ -34,7 +34,7 @@ const routes = [
 
 const App = () => {
   return (
-    <Router>
+    <Router hashType="noslash">
       <Navbar bg="light">
         <Navbar.Brand href="/" key="/" as={NavLink} to="/" exact>
           <img
