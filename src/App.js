@@ -9,10 +9,28 @@ import {
 import { CSSTransition } from "react-transition-group";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-import Routes from "./routes";
+import Home from "./pages/Home";
+import Hotel from "./pages/Hotel";
+import Entertainment from "./pages/Entertainment";
+import Prices from "./pages/Prices";
+import Sponsors from "./pages/Sponsors";
+import Festivals from "./pages/Festivals";
+import Reservation from "./pages/Reservation";
+import Contact from "./pages/Contact";
 
 import logo from "./assets/img/logo.png";
 import "./App.css";
+
+const routes = [
+  { path: "/", name: "Anasayfa", Component: Home, exact: true },
+  { path: "/Hotel", name: "Otel", Component: Hotel },
+  { path: "/Entertainment", name: "Eğlence", Component: Entertainment },
+  { path: "/Prices", name: "Fiyatlar", Component: Prices },
+  { path: "/Sponsors", name: "Sponsorlar", Component: Sponsors },
+  { path: "/Festivals", name: "Geçmiş Festivaller", Component: Festivals },
+  { path: "/Reservation", name: "Rezervasyon", Component: Reservation },
+  { path: "/Contact", name: "İletişim", Component: Contact }
+];
 
 const App = () => {
   return (
@@ -28,7 +46,7 @@ const App = () => {
           />
         </Navbar.Brand>
         <Nav className="ml-auto">
-          {Routes.map(route => (
+          {routes.map(route => (
             <Nav.Link
               key={route.path}
               as={NavLink}
@@ -42,7 +60,7 @@ const App = () => {
         </Nav>
       </Navbar>
       <Container className="container">
-        {Routes.map(({ path, Component }) => (
+        {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
             {({ match }) => (
               <CSSTransition
