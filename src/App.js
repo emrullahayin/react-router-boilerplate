@@ -18,18 +18,17 @@ import Festivals from "./pages/Festivals";
 import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 
-import logo from "./assets/img/logo.png";
 import "./App.css";
 
 const routes = [
   { path: "/", name: "Anasayfa", Component: Home, exact: true },
-  { path: "/Hotel", name: "Otel", Component: Hotel },
-  { path: "/Entertainment", name: "Eğlence", Component: Entertainment },
-  { path: "/Prices", name: "Fiyatlar", Component: Prices },
-  { path: "/Sponsors", name: "Sponsorlar", Component: Sponsors },
-  { path: "/Festivals", name: "Geçmiş Festivaller", Component: Festivals },
-  { path: "/Reservation", name: "Rezervasyon", Component: Reservation },
-  { path: "/Contact", name: "İletişim", Component: Contact }
+  { path: "/Hotel", name: "Hotel", Component: Hotel },
+  { path: "/Entertainment", name: "Entertainment", Component: Entertainment },
+  { path: "/Prices", name: "Prices", Component: Prices },
+  { path: "/Sponsors", name: "Sponsors", Component: Sponsors },
+  { path: "/Festivals", name: "Festivals", Component: Festivals },
+  { path: "/Reservation", name: "Reservation", Component: Reservation },
+  { path: "/Contact", name: "Contact", Component: Contact }
 ];
 
 const App = () => {
@@ -37,13 +36,7 @@ const App = () => {
     <Router hashType="noslash">
       <Navbar bg="light">
         <Navbar.Brand href="/" key="/" as={NavLink} to="/" exact>
-          <img
-            src={logo}
-            width="80"
-            height="60"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
+          React Router Boilerplate
         </Navbar.Brand>
         <Nav className="ml-auto">
           {routes.map(route => (
