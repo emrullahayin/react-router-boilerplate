@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 git clone https://github.com/emrullahayin/react-router-boilerplate.git
 ```
 - How to run locally?
-1. Clone and cd into the repo.
+1. cd into the repo.
 2. Run `yarn` or `npm i` to download dependencies.
 3. Run `yarn start` or `npm start` to start the development server.
 
