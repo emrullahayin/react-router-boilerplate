@@ -2,6 +2,11 @@
   "name": "react-router-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Emrullah Ayın",
+    "email": "ayinemrullah@gmail.com",
+    "url": "https://github.com/emrullahayin"
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-app-polyfill": "^0.2.2",
