@@ -9,6 +9,7 @@ import {
 import { CSSTransition } from "react-transition-group";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
+/* @Pages */
 import Home from "./pages/Home";
 import Hotel from "./pages/Hotel";
 import Entertainment from "./pages/Entertainment";
@@ -52,7 +53,7 @@ const App = () => {
           ))}
         </Nav>
       </Navbar>
-      <Container className="container">
+      <Container style={styles.container}>
         {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
             {({ match }) => (
@@ -62,7 +63,7 @@ const App = () => {
                 classNames="page"
                 unmountOnExit
               >
-                <div className="page">
+                <div className="page" style={styles.page}>
                   <Component />
                 </div>
               </CSSTransition>
@@ -72,5 +73,16 @@ const App = () => {
       </Container>
     </Router>
   );
+};
+
+const styles = {
+  container: {
+    position: "relative"
+  },
+  page: {
+    position: "absolute",
+    left: "15px",
+    right: "15px"
+  }
 };
 export default App;
